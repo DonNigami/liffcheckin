@@ -14,8 +14,8 @@
     <center>
     <h1>Check-In/Out Log</h1>
 <p>กดปุ่มด้านล่าง เพื่อบันทึกการลงเวลานะคะ</p>
-<div id="cin" class="invisible"><button type="button" class="btn btn-success" onclick="getLocation()">Check-In</button></div>
-<div id="cout" class="invisible"><button id="cout" type="button" class="btn btn-danger" onclick="getLocationOut()">Check-Out</button></div>
+<div id="cin" class="visible"><button type="button" class="btn btn-success" onclick="getLocation()">Check-In</button></div>
+<div id="cout" class="visible"><button id="cout" type="button" class="btn btn-danger" onclick="getLocationOut()">Check-Out</button></div>
 
 <p id="demo"></p>
 </center>
@@ -27,7 +27,7 @@ window.onload = function() {
 
 const xurl = "https://script.google.com/macros/s/AKfycbzcKMeWLXBTA87uPxGNfoanw0SFdbNpyWwgmcKGIO_JmP6Gv5juzjHlr0YnYPF8A001ig/exec";
 
-
+/**
 function checks(){
 
 var today = new Date();
@@ -44,7 +44,7 @@ alert("ไม่สามารถเช็คอิน/เอาท์ได้
 liff.closeWindow();  
             }
 }
-
+*/
 
 function initializeLiff(myLiffId) {
     liff
@@ -52,7 +52,7 @@ function initializeLiff(myLiffId) {
             liffId: myLiffId
         })
         .then(() => {
-            checks();
+      
         })
         .catch((err) => {
         });
