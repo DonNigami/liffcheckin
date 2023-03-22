@@ -35,7 +35,7 @@ today.toLocaleString('th-TH', { timeZone: 'Asia/Bangkok' })
 var hh = today.getHours();
 var mm = today.getMinutes(); 
 
-        if(hh <= 22 && mm <= 0){
+        if(hh <= 20 && mm <= 0){
           document.getElementById("cin").classList.remove('invisible');
         }else if(hh >= 23 && mm >= 0){
           document.getElementById("cout").classList.remove('invisible');
